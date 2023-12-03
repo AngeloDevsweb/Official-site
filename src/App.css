@@ -26,11 +26,11 @@
   height: 15px;
   width: 100%;
   margin-top: 25px;
-  margin-bottom: 35px;
+  margin-bottom: 45px;
   background: linear-gradient(to right, red, yellow, green, cyan, blue, violet);
   background-size: 600% 100%;
   border-radius: 10px;
-  animation: gradientAnimation 5s ease infinite;
+  animation: gradientAnimation 3s ease infinite;
 }
 
 @keyframes gradientAnimation {
@@ -59,4 +59,102 @@ font-size: 18px;
 font-style: normal;
 font-weight: 100;
 line-height: normal;
+}
+
+.content{
+  height: 100%;
+}
+
+
+/* contenido seccion logos */
+.titulo-logos{
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 60px;
+  margin-bottom: 70px;
+}
+.contenedor-logos{
+  display: flex;
+  justify-content: space-between;
+}
+
+.estilo-logo{
+  border-radius: 50%;
+  width: 155px;
+  height: 150px;
+}
+
+/* seccion de los videos  */
+.titulo-videos{
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+/* seccion del footer */
+.es-footer{
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* Tamaño máximo para dispositivos móviles */
+@media (max-width: 576px) {
+  /* Estilos para dispositivos móviles */
+  /* contenido primer seccion */
+.titulo{
+  font-size: 34px;
+  color: white;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.parrafo{
+  color: white;
+font-size: 14px;
+font-style: normal;
+font-weight: 100;
+line-height: normal;
+}
+.content{
+  height: 100%;
+}
+
+/* seccion de logos */
+.titulo-logos{
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.contenedor-logos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.estilo-logo{
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  margin-top: 40px;
+}
+
 }
