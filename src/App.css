@@ -84,8 +84,12 @@ line-height: normal;
 
 .estilo-logo{
   border-radius: 50%;
-  width: 155px;
-  height: 150px;
+  width: 145px;
+  height: 140px;
+  transition: transform 0.2s ease-in-out;
+}
+.estilo-logo:hover{
+  transform: translateY(-5px);
 }
 
 /* seccion de los videos  */
@@ -100,12 +104,39 @@ line-height: normal;
   margin-bottom: 10px;
 }
 
+.logo-card{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.contenedor-card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link-card{
+  text-decoration: none;
+  color: white;
+  transition: all 0.15s;
+}
+.link-card:hover{
+  color: slategray;
+}
+.efecto-cards{
+  transition: transform 0.2s ease-in-out;
+}
+.efecto-cards:hover{
+  transform: translateY(-5px);
+}
+
 /* seccion del footer */
 .es-footer{
   text-align: center;
   color: white;
   font-size: 16px;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 30px;
 }
 
