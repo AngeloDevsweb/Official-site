@@ -9,3 +9,16 @@
     color: white;
     text-decoration: none;
 }
+
+/* Tamaño máximo para dispositivos móviles */
+@media (max-width: 576px) {
+    /* Estilos para dispositivos móviles */
+    .caja-detalle{
+        padding-left: 10px;
+        padding-right: 10px
+    }
+
+    .contenedor-reproductor{
+        height: 210px;
+    }
+}
