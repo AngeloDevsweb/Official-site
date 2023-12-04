@@ -1,0 +1,11 @@
+.caja-detalle{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.contenedor-reproductor{
+    height: 600px;
+}
+.enlace-details{
+    color: white;
+    text-decoration: none;
+}
