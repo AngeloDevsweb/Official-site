@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-target-blank */
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 import ReactMarkdown from "react-markdown";
 import ReactPlayer from "react-player";
@@ -58,9 +58,23 @@ const Details = () => {
           />
         </div>
 
-        <div className="mt-3">
-        <a className="enlace-details" href={objeto.linkrepo} target="_blank">Enlace de github: {objeto.linkrepo}</a>
+        <div className="mt-3 mb-3">
+          <a className="enlace-details" href={objeto.linkrepo} target="_blank">
+            Enlace de github: {objeto.linkrepo}
+          </a>
+                  {/* 
+                  <a
+          className="enlace-details"
+          href={objeto.linkrepo === "repositorio no valido" ? "https://www.youtube.com" : objeto.linkrepo}
+          target="_blank"
+        >
+          Enlace de github: {objeto.linkrepo}
+        </a> */}
         </div>
+
+        <Link className="volver-atras" to="/contenido">
+          Volver Atras
+        </Link>
       </div>
 
       {/* seccion del footer  */}

@@ -9,6 +9,19 @@
     color: white;
     text-decoration: none;
 }
+.volver-atras{
+    color: white;
+    font-size: 18px;
+    transition: all 0.15s;
+}
+.volver-atras:hover{
+    color: slategray;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
 
 /* Tamaño máximo para dispositivos móviles */
 @media (max-width: 576px) {

@@ -54,6 +54,10 @@ const Contenido = () => {
    
 
       </div>
+
+      <footer className="es-footer">
+        &copy;2023 AngeloDevsweb.github.io - All rights reserved.
+      </footer>
     </div>
   )
 }
