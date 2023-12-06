@@ -15,7 +15,7 @@ const Contenido = () => {
     getApi()
   },[])
 
-  console.log(lista);
+  //console.log(lista);
   return (
     <div className='container'>
       <div className="separador"></div>
