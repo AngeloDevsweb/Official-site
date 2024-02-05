@@ -16,7 +16,7 @@ const Details = () => {
         const response = await axios.get(
           `https://jvaldez.duckdns.org:8443/api/contenidos/${id}`
         );
-        console.log("Respuesta de la API:", response);
+        //console.log("Respuesta de la API:", response);
         if (response.status === 200) {
           const { data } = response;
           if (data && data.data && data.data.attributes) {
@@ -37,7 +37,7 @@ const Details = () => {
     obtenerDetalles();
   }, [id]);
 
-  console.log(objeto);
+  //console.log(objeto);
 
   return (
     <div className="container">
