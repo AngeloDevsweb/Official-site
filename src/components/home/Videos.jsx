@@ -2,16 +2,22 @@
 import axios from 'axios'
 import { useEffect } from 'react'
 import { useState } from 'react'
-
-
+import Spinner from '../Spinner'
 
 const Videos = () => {
 
   const [videos, setVideos] = useState([])
+  const [isLoading, setIsLoading] = useState(true)
 
   const getApi = async()=>{
-    const {data} = await axios.get('https://jvaldez.duckdns.org:8443/api/homes?populate=*')
+    try {
+      const {data} = await axios.get('https://jvaldez.duckdns.org:8443/api/homes?populate=*')
     setVideos(data.data)
+    setIsLoading(false)
+    } catch (error) {
+      setIsLoading(false)
+      alert("Lo sentimos en este momento estamos experimentando problemas con el servidor")
+    }
   }
 
   useEffect(()=>{
@@ -25,7 +31,8 @@ const Videos = () => {
       <div className="separador"></div>
       
       <div className='row row-cols-1 row-cols-md-3 g-4'>
-        {
+        {isLoading ? (<Spinner isLoading={isLoading} />): (
+          
           videos.map(({id, attributes})=>(
             <div key={id} className="col efecto-cards">
             
@@ -55,7 +62,7 @@ const Videos = () => {
             
           </div>
           ))
-        }
+        )}
    
 
       </div>
